@@ -1,0 +1,15 @@
+<section class="container">
+  <div class="container__title">
+    <h1>Register of Users</h1>
+  </div>
+
+  <div class="container__body">
+  <form (ngSubmit)="onSubmit()" [formGroup]="formUser">
+      <input type="text" name="" placeholder="Ingresar Nombre" formControlName="name" id="">
+      <input type="text" name="" placeholder="Ingresar Email"  formControlName="email" id="">
+      <input type="text" name="" placeholder="Ingresar Contraseña" formControlName="password" id="">
+
+      <button type="submit">Agregar</button>
+  </form>
+  </div>
+</section>

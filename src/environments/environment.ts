@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  API_URL: 'https://bsckarylzmwislehyxvj.supabase.co',
+  API_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzY2thcnlsem13aXNsZWh5eHZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTk3NTY1NzAsImV4cCI6MTk3NTMzMjU3MH0.YlV8hZMSgIoyVrhLyIMlqSQTpFMdwZqubTLk0_OuLBc',
+  API_AUTHORIZATION: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJzY2thcnlsem13aXNsZWh5eHZqIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NTk3NTY1NzAsImV4cCI6MTk3NTMzMjU3MH0.YlV8hZMSgIoyVrhLyIMlqSQTpFMdwZqubTLk0_OuLBc"
 };
 
 /*
