@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { UserService } from '../services/user.service';
+import { UserService } from '../../services/user.service';
+
+interface LoginUser {
+  name: string;
+  email: string;
+  password: string;
+  status: string;
+
+}
 
 @Component({
   selector: 'app-dashboard-home',
@@ -10,11 +18,11 @@ import { UserService } from '../services/user.service';
 export class DashboardHomeComponent implements OnInit {
   formUser: FormGroup;
   constructor(private formBuilder: FormBuilder, private userService: UserService) {
-    this.formUser = this.formBuilder.group({
-      name: [''],
-      email: [''],
-      password: [''],
-      status: ['active']
+    this.formUser = this.formBuilder.group<LoginUser>({
+      name: '',
+      email: '',
+      password: '',
+      status: 'active'
     })
   }
 
@@ -24,6 +32,7 @@ export class DashboardHomeComponent implements OnInit {
 
   onSubmit() {
     console.log('user', this.formUser.value);
+    const a = this.formUser.getRawValue();
     this.userService.postUser(this.formUser.getRawValue()).subscribe(rep => {
       console.log('respuesta', rep);
 
