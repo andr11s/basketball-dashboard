@@ -6,6 +6,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommonComponentModule } from '../common-component/common-component.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { AuthenticationModule } from '../authentication/authentication.module';
+import { MainLayoutComponent } from '../layout/main-layout/main-layout.component';
 
 
 
@@ -17,9 +19,10 @@ import { BrowserModule } from '@angular/platform-browser';
     FormsModule,
     HttpClientModule,
     CommonComponentModule,
-
+    AuthenticationModule,
   ],
   exports: [
+    AuthenticationModule,
     ReactiveFormsModule,
     FormsModule,
     PrimeComponentsModule

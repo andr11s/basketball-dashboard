@@ -12,11 +12,14 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonComponentModule } from './common-component/common-component.module';
 import { SharedModule } from './shared/shared.module';
 import { CommonNavbarComponent } from './common-component/common-navbar/common-navbar.component';
+import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 
+ 
 @NgModule({
   declarations: [
     AppComponent,
-    CommonNavbarComponent
+    CommonNavbarComponent,
+    MainLayoutComponent
   ],
   imports: [
     BrowserModule,
