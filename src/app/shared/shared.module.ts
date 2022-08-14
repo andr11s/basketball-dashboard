@@ -14,15 +14,10 @@ import { MainLayoutComponent } from '../layout/main-layout/main-layout.component
 @NgModule({
   declarations: [],
   imports: [
-    PrimeComponentsModule,
-    ReactiveFormsModule,
-    FormsModule,
-    HttpClientModule,
+    PrimeComponentsModule, 
     CommonComponentModule,
-    AuthenticationModule,
   ],
   exports: [
-    AuthenticationModule,
     ReactiveFormsModule,
     FormsModule,
     PrimeComponentsModule

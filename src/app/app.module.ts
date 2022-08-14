@@ -24,8 +24,10 @@ import { MainLayoutComponent } from './layout/main-layout/main-layout.component'
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule,
     AppRoutingModule,
-    SharedModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
