@@ -27,7 +27,11 @@ export class DashboardHomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+      this.userService.getUsers().subscribe(c=> {
 
+        console.log('ee', c);
+        
+      })
   }
 
   onSubmit() {
